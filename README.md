@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Function Name
+# reFunctionName
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -50,7 +50,7 @@ The [branches.md][branches-url] file summarizes the available branches and displ
 var reFunctionName = require( '@stdlib/regexp-function-name' );
 ```
 
-#### reFunctionName
+#### reFunctionName()
 
 Returns a [regular expression][regexp] to capture a `function` name.
 
