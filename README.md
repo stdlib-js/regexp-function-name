@@ -24,30 +24,20 @@ limitations under the License.
 
 > [Regular expression][regexp] to capture a function name.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/regexp-function-name
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var reFunctionName = require( '@stdlib/regexp-function-name' );
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
 ```
 
 #### reFunctionName()
@@ -87,9 +77,14 @@ var str = reFunctionName.REGEXP.exec( Math.sqrt.toString() )[ 1 ];
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Int8Array = require( '@stdlib/array-int8' );
-var reFunctionName = require( '@stdlib/regexp-function-name' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@esm/index.mjs';
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
 var RE_FUNCTION_NAME = reFunctionName();
 
 function fname( fcn ) {
@@ -107,6 +102,10 @@ f = fname( Object.prototype.toString );
 
 f = fname( function () {} );
 // returns ''
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -136,7 +135,7 @@ f = fname( function () {} );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -200,7 +199,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/function-name]: https://github.com/stdlib-js/utils-function-name
+[@stdlib/utils/function-name]: https://github.com/stdlib-js/utils-function-name/tree/esm
 
 <!-- </related-links> -->
 
