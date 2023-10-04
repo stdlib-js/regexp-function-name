@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@deno/mod.js';
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.1.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@deno/mod.js';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.1.1-deno/mod.js';
 ```
 
 #### reFunctionName()
@@ -90,7 +90,7 @@ var str = reFunctionName.REGEXP.exec( Math.sqrt.toString() )[ 1 ];
 
 ```javascript
 import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@deno/mod.js';
-import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@deno/mod.js';
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.1.1-deno/mod.js';
 var RE_FUNCTION_NAME = reFunctionName();
 
 function fname( fcn ) {
