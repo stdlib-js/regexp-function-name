@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/regexp-function-name/tags). For example,
+
+```javascript
 import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-esm/index.mjs';
+import { REGEXP } from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
 ```
 
 #### reFunctionName()
@@ -95,7 +100,7 @@ var str = reFunctionName.REGEXP.exec( Math.sqrt.toString() )[ 1 ];
 <script type="module">
 
 import Int8Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@esm/index.mjs';
-import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-esm/index.mjs';
+import reFunctionName from 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@esm/index.mjs';
 var RE_FUNCTION_NAME = reFunctionName();
 
 function fname( fcn ) {
