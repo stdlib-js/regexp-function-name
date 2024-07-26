@@ -44,7 +44,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-reFunctionName = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@umd/browser.js' )
+reFunctionName = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -56,7 +56,7 @@ var reFunctionName = require( 'path/to/vendor/umd/regexp-function-name/index.js'
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -111,7 +111,7 @@ var str = reFunctionName.REGEXP.exec( Math.sqrt.toString() )[ 1 ];
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-int8@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/regexp-function-name@v0.2.2-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 var RE_FUNCTION_NAME = reFunctionName();
